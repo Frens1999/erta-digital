@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+    <script src="index.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/63ca6732e7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <title>Erta | Marketing</title>
+  </head>
+  <body>
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg d-flex justify-content-between nav-color"
+    >
+      <div class="d-flex justify-content-between w-100 m-2 pt-2">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="img/white-logo.png"
+            id="navbar-brand"
+            width="150px"
+            height="70px"
+            alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          id="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="collapse navbar-collapse m-2" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 p-2" id="list">
+          <li class="nav-item active">
+            <a
+              class="nav-link text-white fs-5"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              href="index.html"
+              >Home <span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white fs-5"
+              data-bs-toggle="collapse"
+              href="pricing.html"
+              >Pricing</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white fs-5"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              href="#section-1"
+              >Services</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link text-white fs-5"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              href="#about-us"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white fs-5"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              href="#reviews"
+              >Reviews</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-white fs-5"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              href="contact.html"
+              >Contact</a
+            >
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#">About Us</a>
+            </li> -->
+        </ul>
+      </div>
+    </nav>
+    <div class="main-div">
+      <div class="video-container">
+        <video id="video" src="video_home.mp4" autoplay loop muted>
+          <!-- <source  id="source" ></source> -->
+        </video>
+      </div>
+
+      <div class="paragraphs">
+        <h1 class="text-white text-center">Erta Marketing</h1>
+        <p class="text-white company-info">
+          We are an agency focused on the unique needs of businesses. We offer a
+          wide range of services, from Website Design & Development to Social
+          Media Management, Advertising, and Graphic Design. All tailored to
+          your budget and niche.
+        </p>
+        <div
+          class="container"
+          style="display: flex; justify-content: space-around"
+        >
+          <a class="btn-grad" href="pricing.html">Our work</a>
+          <a
+            class="btn-grad"
+            href="contact.html"
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            Contact
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-us container" id="about-us">
+      <h2
+        class="headers"
+        style="
+          color: #00344f;
+          text-align: center;
+          margin-left: -60px;
+          margin-top: 2rem;
+        "
+      >
+        About Us
+      </h2>
+
+      <div class="text-center mt-5" style="color: #00344f; margin-left: -7px">
+        <h3 style="margin-bottom: 2rem">ERTA Digital Marketing</h3>
+        <p>
+          We are a leading digital agency specializing in Marketing Strategy,
+          Graphic Design, Content Creation, Audience Growth, Advertising, and
+          more. Our team of highly professional and talented experts offers full
+          Social Media Marketing services for any business. For many years now,
+          <span style="color: #00344f">ERTA</span>
+          has been delivering online marketing solutions for a broad customer
+          base across multiple industries. We bring management and advertising
+          expertise to your table. Our graphic designers are artists. Our
+          content creators are poets. Using world-class open source technologies
+          and best strategies, we have successfully finished about 350 projects
+          for various professional companies and large associations across the
+          world. And, we are on the way to make you feel amazing in the Social
+          Media world.
+        </p>
+      </div>
+    </div>
+    <!-- SERVICES -->
+    <div class="section-1" id="section-1">
+      <div class="container mt-4 pt-3 pb-3">
+        <h2
+          class="headers-white"
+          style="
+            color: #fff;
+            text-align: center;
+            margin-left: -60px;
+            margin-top: 2rem;
+          "
+        >
+          Our Services
+        </h2>
+        <div class="carousel-div row">
+          <div class="service col-md-5 col-sm-10">
+            <div></div>
+            <div class="service-text">
+              <h3>SOCIAL MEDIA MARKETING SERVICES</h3>
+              <p>
+                Full-service Social Media Marketing services to transform your
+                online presence with branded and relevant content, and audience
+                growth.
+              </p>
+            </div>
+          </div>
+          <div class="service col-md-5 col-sm-10">
+            <div></div>
+            <div class="service-text">
+              <h3>SOCIAL MEDIA ADVERTISING SERVICES</h3>
+              <p>
+                Proven advertising services to accelerate growth. By advertising
+                through Social Media, 100% of our clients have seen results at
+                lower costs than before.
+              </p>
+            </div>
+          </div>
+          <div class="service col-md-5 col-sm-10">
+            <div></div>
+            <div class="service-text">
+              <h3>EMAIL & SMS MARKETING SERVICES</h3>
+              <p>
+                Stay top of mind and speed up your sales cycle with our e-mail &
+                SMS services. Drip high-quality content that will convince
+                prospects you are the best option for them!
+              </p>
+            </div>
+          </div>
+          <div class="service col-md-5 col-sm-10">
+            <div></div>
+            <div class="service-text">
+              <h3>WEBSITE DESIGN SERVICES</h3>
+              <p>
+                To get the most success from Social Media Advertising you need
+                an effective website. We build top-quality websites to keep your
+                visitors engaged during the buying process. Our complete website
+                strategy is designed to turn your site visitors into customers.
+              </p>
+            </div>
+          </div>
+          <div class="service col-md-5 col-sm-10">
+            <div></div>
+            <div class="service-text">
+              <h3>CONTENT MARKETING SERVICES</h3>
+              <p>
+                When graphic designs have finally grabbed the audience’s
+                attention and they get to consume your content, then you want it
+                to be the right messages that will resonate! We’re here to help
+                you with all your content writing needs.
+              </p>
+            </div>
+          </div>
+          <div class="service col-md-5 col-sm-10">
+            <div></div>
+            <div class="service-text">
+              <h3>GRAPHIC DESIGN SERVICES</h3>
+              <p>
+                Visual content converts faster than words alone. Attract a
+                larger audience, nurture high-intent prospects, and enhance
+                customer engagement with graphic designs that matter.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRICING -->
+
+    <!-- ABOUT -->
+    <div id="about"></div>
+    <!-- REVIEWS -->
+    <div id="reviews">
+      <div class="container p-4">
+        <h2
+          class="headers"
+          style="
+            color: #00344f;
+            text-align: center;
+            margin-left: -60px;
+            margin-top: 2rem;
+          "
+        >
+          Reviews
+        </h2>
+        <div class="row" style="margin-top: 40px">
+          <div class="col-sm-2 col-md-1">
+            <i
+              class="fas fa-quote-left fa-3x icon"
+              style="margin-top: 25px"
+            ></i>
+          </div>
+          <div class="col-s10 col-md-11">
+            <div class="text-review">
+              <p>
+                "ERTA is by far the best agency we had! I would highly recommend
+                it not only for their quality of work, but also for the
+                wholehearted enthusiasm and dedication they show to their work.
+                They have gone the extra mile, which was not even in their
+                contract, to help us grow our company.
+                <br />
+                Thank you!"
+              </p>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p style="font-size: 1.2rem">Dhakan Jewellery</p>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 40px">
+          <div class="col-sm-2 col-md-1">
+            <i
+              class="fas fa-quote-left fa-3x icon"
+              style="margin-top: 25px"
+            ></i>
+          </div>
+          <div class="col-s10 col-md-11">
+            <div class="text-review">
+              <p>
+                ERTA is simply amazing! They kept the communication lines open
+                with me and always clarified my questions. I am very satisfied
+                with the service the team provided to my personal brand & my
+                organization. ERTA took what I believe in and turned the concept
+                into a visible marketable social media content. I will hire them
+                again for future projects!
+                <br />
+                Thank you!"
+              </p>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p style="font-size: 1.2rem">
+              Ruth Yeboah, Founder & CEO, Women of Value Inc.
+            </p>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 40px">
+          <div class="col-sm-2 col-md-1">
+            <i
+              class="fas fa-quote-left fa-3x icon"
+              style="margin-top: 25px"
+            ></i>
+          </div>
+          <div class="col-s10 col-md-11">
+            <div class="text-review">
+              <p>
+                This agency did a fantastic job marketing and branding our
+                platforms. They understand direction well BUT ALSO ARE CREATIVE
+                AND SAVVY enough to add suggestions which did improve some of
+                the select marketing adverts. They stay in regular
+                communication. Extremely happy with the final product.
+                <br />
+                Thank you!"
+              </p>
+            </div>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p style="font-size: 1.2rem">Sid Ferdinand, CEO</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="footer-text">
+        <p>Email: ertadigital@gmail.com</p>
+        <p>Copyright © 2021. All Rights Reserved | ERTA Digital Marketing</p>
+
+        <!-- <a class="privacy-policy modal-trigger" href="#modal2"
+          >Privacy Policy</a
+        > -->
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Boostrap jQuery-->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <!-- GSAP -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script> -->
+  </body>
+</html>
