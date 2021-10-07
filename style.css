@@ -270,7 +270,9 @@ body {
   margin-left: 10px;
   color: #fff;
 }
-
+.service-text h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
 /* .service:hover {
   transition: all 0.3s ease;
   box-shadow: -3px 11px 32px rgb(0 0 0/ 8%);
