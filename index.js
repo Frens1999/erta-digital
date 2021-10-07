@@ -77,18 +77,7 @@ window.addEventListener("resize", function (event) {
   var video = document.getElementById("video");
   width = document.body.clientWidth;
   if (document.body.clientWidth > 500) {
-    if (video) {
-      video.src = "video_home.mp4";
-      video.load();
-      video.play();
-    }
   } else {
-    if (video) {
-      // video.src = "video_home_sm.mp4";
-      // video.load();
-      // video.play();
-    }
-
     var nav = document.getElementById("navbar");
     var toggler = this.document.getElementsByClassName("fa-bars");
     var links = this.document.getElementsByClassName("nav-link");

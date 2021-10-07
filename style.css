@@ -422,8 +422,8 @@ body {
   .web {
     margin: 10px !important;
   }
-  .service {
-    margin-left: 0;
+  .service-header {
+    margin-left: 0 !important;
   }
   /* .cards {
     margin: 0 0 10px 0 !important;
