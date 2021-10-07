@@ -425,6 +425,9 @@ body {
   .service-header {
     margin-left: 0 !important;
   }
+  .pricing-header {
+    margin-left: 0 !important;
+  }
   /* .cards {
     margin: 0 0 10px 0 !important;
   } */
