@@ -1,5 +1,12 @@
-// var width = 0;
-// gsap.from("#navbar", { duration: 1, y: "-100%", ease: "bounce" });
+window.onload = () => {
+  if (window.innerWidth < 600) {
+    var nav = document.querySelector("#navbar");
+    var brand = document.getElementById("navbar-brand");
+    var toggler = document.getElementsByClassName("fa-bars");
+    var links = document.getElementsByClassName("nav-link");
+    blueData(nav, links, brand, toggler);
+  }
+};
 
 function whiteData(nav, links, brand, toggler) {
   for (let i = 0; i < links.length; i++) {
@@ -17,33 +24,32 @@ function blueData(nav, links, brand, toggler) {
     links[i].classList.add("text-blue");
     links[i].classList.remove("text-white");
   }
-  toggler[0].classList.add("text-blue");
-  toggler[0].classList.remove("text-white");
+
   brand.src = "img/blue-logo.png";
   nav.classList.add("nav-color2");
   nav.classList.remove("nav-color");
+  toggler[0].classList.add("text-blue");
+  toggler[0].classList.remove("text-white");
 }
 window.addEventListener(
   "scroll",
   function (event) {
     var top = this.scrollY;
-
+    var nav = document.getElementById("navbar");
+    var brand = this.document.getElementById("navbar-brand");
+    var toggler = this.document.getElementsByClassName("fa-bars");
+    var links = this.document.getElementsByClassName("nav-link");
     // GSAP ANIMATIONS
     if (top > 380) {
       // gsap.from(".carousel-div", { duration: 1, x: "30vh" });
     }
     // CSS class changes
 
-    var nav = document.getElementById("navbar");
-    var brand = this.document.getElementById("navbar-brand");
-    var toggler = this.document.getElementsByClassName("fa-bars");
-    var links = this.document.getElementsByClassName("nav-link");
     if (top >= 45) {
       this.blueData(nav, links, brand, toggler);
     } else {
       this.whiteData(nav, links, brand, toggler);
       if (width < 800) {
-        console.log("here");
         this.blueData(nav, links, brand, toggler);
       } else {
         this.whiteData(nav, links, brand, toggler);
@@ -98,11 +104,3 @@ window.addEventListener("resize", function (event) {
     toggler[0].classList.remove("text-white");
   }
 });
-
-// $(document).ready(function () {
-//   $(document).click(function () {
-//     // if($(".navbar-collapse").hasClass("in")){
-//     $(".navbar-collapse").collapse("hide");
-//     // }
-//   });
-// });
