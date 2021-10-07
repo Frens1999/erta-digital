@@ -34,6 +34,7 @@ body {
   display: block;
   object-fit: cover;
   margin-top: -120px;
+  height: 100vh;
 }
 .video-container:before {
   content: "";
@@ -420,6 +421,9 @@ body {
   }
   .web {
     margin: 10px !important;
+  }
+  .service {
+    margin-left: 0;
   }
   /* .cards {
     margin: 0 0 10px 0 !important;

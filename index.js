@@ -78,9 +78,9 @@ window.addEventListener("resize", function (event) {
     }
   } else {
     if (video) {
-      video.src = "video_home_sm.mp4";
-      video.load();
-      video.play();
+      // video.src = "video_home_sm.mp4";
+      // video.load();
+      // video.play();
     }
 
     var nav = document.getElementById("navbar");
