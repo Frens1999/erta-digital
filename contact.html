@@ -8,6 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
     <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script
       src="https://kit.fontawesome.com/63ca6732e7.js"
@@ -252,6 +253,16 @@
       </div>
     </footer>
 
+    <script>
+      $(document).click(function (event) {
+        var clickover = $(event.target);
+        var $navbar = $(".navbar-collapse");
+        var _opened = $navbar.hasClass("in");
+        if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+          $navbar.collapse("hide");
+        }
+      });
+    </script>
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js"
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
